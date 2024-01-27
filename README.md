@@ -24,11 +24,11 @@
   </nav>
   
   <aside id="sidebar">
-    <!-- Πλευρικό μενού περιεχομένου -->
+    
   </aside>
   
   <main id="main-content">
-    <!-- Κύριο περιεχόμενο -->
+   
   </main>
   
   <footer>
@@ -44,7 +44,7 @@
 
 
 
-/* Γενικά στυλ */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -85,19 +85,19 @@ nav ul li a {
   padding: 20px;
 }
 
-/* Κύριο περιεχόμενο */
+
 #main-content {
   float: left;
   width: 80%;
   padding: 20px;
 }
 
-/* Εφέ στο hover */
+
 nav ul li a:hover {
   color: #ccc;
 }
 
-/* Media query για απεικόνιση σε κινητές συσκευές */
+
 @media screen and (max-width: 600px) {
   #sidebar, #main-content {
     width: 100%;
@@ -129,17 +129,16 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(error => console.error('Error fetching sidebar content:', error));
   }
 
-  // Προσωρινή αυθεντικοποίηση - Μπορείτε να αντικαταστήσετε με πιο προηγμένο μηχανισμό αυθεντικοποίησης
+ 
   const loginForm = document.getElementById('login-form');
   loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    if (username === 'admin' && password === 'admin') {
-      alert('Συνδεθήκατε επιτυχώς!');
-      // Εδώ μπορείτε να προσθέσετε κώδικα για την αλλαγή της λειτουργικότητας μετά τη σύνδεση
+    if (username === 'Bill' && password === '01634') {
+      alert('Συνδεθηκατε επιτυχως!');
     } else {
-      alert('Λάθος όνομα χρήστη ή κωδικός.');
+      alert('Λαθος ονομα χρηστη η κωδικος.');
     }
   });
 });
