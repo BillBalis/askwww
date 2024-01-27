@@ -43,7 +43,7 @@
 
 
 
-
+Css
 
 body {
   font-family: Arial, sans-serif;
@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 
-
+Javscript
 
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('nav ul li a');
